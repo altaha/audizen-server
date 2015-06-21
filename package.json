@@ -2,9 +2,9 @@
   "name": "Audizen-backend-server",
   "version": "0.0.0",
   "description": "Audizen Backend and Rest API",
-  "main": "express.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node express.js"
+    "start": "node app.js"
   },
   "author": "Ahmed Altaha",
   "dependencies": {
