@@ -3,7 +3,7 @@ var express = require('express'),
     logger = require('morgan')
 var apis = require('./api/api_v1')
 
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 8000
 
 var app = express()
 app.use(bodyParser.json())
