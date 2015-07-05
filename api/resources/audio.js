@@ -26,11 +26,14 @@ router.param('id', function(req, res, next, id) {
     }
 })
 
-router.get('/audio/:id', function(req, res) {
+router.get('/', function(req, res) {
+    res.json({length: audio_files.length})
+})
+router.get('/:id', function(req, res) {
     res.json(req.audio)
 })
 
-router.post('/audio', busboy,  function(req, res) {
+router.post('/', busboy,  function(req, res) {
     req.pipe(req.busboy)
     req.busboy.on('file', function (fieldname, file, filename) {
         console.log("Uploading: " + filename)
